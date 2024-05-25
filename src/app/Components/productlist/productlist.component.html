@@ -1,0 +1,32 @@
+<div class="container text-center">
+    <h1 class="text-danger mt-4">Our Products</h1>
+    <div class="row align-items-center py-5">
+        <div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">productName</th>
+                    <th scope="col">price</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of products;">
+                    <th scope="row">{{product.id}}</th>
+                    <td>{{product.name}}</td>
+                    <td>{{product.price}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td>
+                        <i class="bi bi-pencil" [routerLink]="['/products', product.id, 'edit']" ></i>
+                        <i class="bi bi-trash mx-3" (click)="deleteProductHandler(product.id)"></i>
+                        <i class="bi bi-eye" [routerLink]="['/products',product.id]"></i>
+                    </td>
+                  </tr>
+            
+                </tbody>
+              </table>
+        </div>
+    </div>
+</div>

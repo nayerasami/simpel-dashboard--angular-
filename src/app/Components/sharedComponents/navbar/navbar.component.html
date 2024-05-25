@@ -1,0 +1,37 @@
+<div class="side-navbar p-5">
+  <h1 class="text-danger">Dashboard</h1>
+ 
+  <ul class="sideNav py-3">
+    <li class="nav-item">
+      <a
+        class="nav-link active"
+        aria-current="page"
+        [routerLink]="['/']"
+        [routerLinkActive]="'text-danger'"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="['/products']"
+        [routerLinkActive]="'text-danger'"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Products</a
+      >
+    </li>
+    <li class="nav-item">
+      <a
+        class="nav-link"
+        [routerLink]="['/products', 0, 'edit']"
+        [routerLinkActive]="'text-danger'"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Add Products</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled text-muted" aria-disabled="true">Login</a>
+    </li>
+  </ul>
+</div>
