@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "T-shirt",
+      "price": 400,
+      "quantity": 4
+    },
+    {
+      "id": "2",
+      "name": "Skirt",
+      "price": 500,
+      "quantity": 6
+    },
+    {
+      "id": "3",
+      "name": "shirt",
+      "price": 550,
+      "quantity": 7
+    },
+    {
+      "id": "4",
+      "name": "blouse",
+      "price": 900,
+      "quantity": 4
+    },
+    {
+      "id": "5",
+      "name": "pants",
+      "price": 800,
+      "quantity": 9
+    },
+    {
+      "id": "6",
+      "name": "dress",
+      "price": 850,
+      "quantity": 8
+    }
+  ]
+}
